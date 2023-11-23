@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const modal = document.getElementById('loginModal');
         modal.style.display = 'block';
     }
+    
 
     // Function to close the login modal
     function closeModal() {

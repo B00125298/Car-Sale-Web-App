@@ -7,9 +7,25 @@
     <title>Second Hand Car Dealership</title>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Modal for Login/Signup -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeButton" onclick="closeModal()">&times;</span>
+            <p>Welcome! Would you like to log in or sign up?</p>
+            <button onclick="redirectToLogin()">Log In</button>
+            <button onclick="redirectToSignup()">Sign Up</button>
+            <button id="skipForNowButton" onclick="skipLogin()">Skip for Now</button>
+        </div>
+    </div>
+
+    <!-- Header Section with Search Bar -->
     <header>
         <h1>Welcome to our Second Hand Car Dealership</h1>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search cars...">
+            <button onclick="searchCars()">Search</button>
+        </div>
     </header>
 
     <!-- Main Content Section -->

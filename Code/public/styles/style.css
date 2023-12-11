@@ -24,6 +24,8 @@ header {
 #car-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start; /* Align car cards from left to right */
+    margin-left: 10px; /* Optional: Add margin for spacing */
 }
 
 .car-card {
@@ -80,3 +82,20 @@ button {
     cursor: pointer;
 }
 
+/* Additional styles for the message input and submit button in the modal */
+.message-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <!-- Header Section with Search Bar -->
+    <!-- Header Section with Search Bar and Filter Button -->
     <header>
         <!-- Login/Signup Link -->
         <div class="login-signup">
@@ -32,6 +32,15 @@
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="Search cars...">
             <button onclick="searchCars()">Search</button>
+        </div>
+
+        <!-- Filter by Year Button -->
+        <div class="filter-section">
+            <label for="yearFilter">Filter by Year:</label>
+            <select id="yearFilter" onchange="updateDisplayedCars()">
+                <option value="">All Years</option>
+                <!-- Options will be dynamically populated using JavaScript -->
+            </select>
         </div>
     </header>
 

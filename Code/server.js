@@ -13,6 +13,16 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
+// Serve the login page
+app.get('/login.html', (req, res) => {
+    res.sendFile(__dirname + '/views/login.html');
+});
+
+// Serve the register page
+app.get('/register.html', (req, res) => {
+    res.sendFile(__dirname + '/views/register.html');
+});
+
 // Serve car data as JSON
 app.get('/api/cars', (req, res) => {
     res.json(carData);

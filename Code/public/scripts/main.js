@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = 'none';
     }
 
-    // Function to redirect to the login page
-    function redirectToLogin() {
-        // You can implement the actual redirection logic here
-        alert('Redirecting to the login page');
+     // Function to redirect to the login page
+     function redirectToLogin() {
+        // Redirect to the login page
+        window.location.href = "/login.html";
     }
 
     // Function to redirect to the signup page
     function redirectToSignup() {
-        // You can implement the actual redirection logic here
-        alert('Redirecting to the signup page');
+        // Redirect to the signup page
+        window.location.href = "/register.html";
     }
 
     // Function to skip login
